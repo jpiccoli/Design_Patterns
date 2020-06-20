@@ -113,5 +113,68 @@
     <ClCompile Include="source\Creational\Abstract_Factory.cpp">
       <Filter>Source Files\Creational</Filter>
     </ClCompile>
+    <ClCompile Include="source\Creational\Builder.cpp">
+      <Filter>Source Files\Creational</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Creational\Factory_Method.cpp">
+      <Filter>Source Files\Creational</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Creational\Prototype.cpp">
+      <Filter>Source Files\Creational</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Adapter.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Bridge.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Composite.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Decorator.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Facade.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Flyweight.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Proxy.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Chain_Of_Responsibility.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Command.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Interpreter.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Iterator.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Mediator.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Memento.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Observer.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\State.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Strategy.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Template_Method.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Behavioral\Visitor.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

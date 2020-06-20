@@ -174,7 +174,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Design_Patterns.cpp" />
+    <ClCompile Include="source\Behavioral\Chain_Of_Responsibility.cpp" />
+    <ClCompile Include="source\Behavioral\Command.cpp" />
+    <ClCompile Include="source\Behavioral\Interpreter.cpp" />
+    <ClCompile Include="source\Behavioral\Iterator.cpp" />
+    <ClCompile Include="source\Behavioral\Mediator.cpp" />
+    <ClCompile Include="source\Behavioral\Memento.cpp" />
+    <ClCompile Include="source\Behavioral\Observer.cpp" />
+    <ClCompile Include="source\Behavioral\State.cpp" />
+    <ClCompile Include="source\Behavioral\Strategy.cpp" />
+    <ClCompile Include="source\Behavioral\Template_Method.cpp" />
+    <ClCompile Include="source\Behavioral\Visitor.cpp" />
     <ClCompile Include="source\Creational\Abstract_Factory.cpp" />
+    <ClCompile Include="source\Creational\Builder.cpp" />
+    <ClCompile Include="source\Creational\Factory_Method.cpp" />
+    <ClCompile Include="source\Creational\Prototype.cpp" />
+    <ClCompile Include="source\Structural\Adapter.cpp" />
+    <ClCompile Include="source\Structural\Bridge.cpp" />
+    <ClCompile Include="source\Structural\Composite.cpp" />
+    <ClCompile Include="source\Structural\Decorator.cpp" />
+    <ClCompile Include="source\Structural\Facade.cpp" />
+    <ClCompile Include="source\Structural\Flyweight.cpp" />
+    <ClCompile Include="source\Structural\Proxy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
