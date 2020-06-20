@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Creational">
+      <UniqueIdentifier>{647cc7dd-8bd6-4c82-af4e-9e60329a3219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Structural">
+      <UniqueIdentifier>{de09c2e2-5d0b-435a-868b-3d3d7b081fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behavioral">
+      <UniqueIdentifier>{695ed977-f5a2-4d36-a4fc-ea78a7d68831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behavioral">
+      <UniqueIdentifier>{e53481ad-6494-4b49-9c26-dd3fc2a97293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Creational">
+      <UniqueIdentifier>{4dea74fb-3ced-46af-9335-d63ba598b909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Structural">
+      <UniqueIdentifier>{7a76f485-a6c6-4cea-8951-b6b53d07d9c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,13 +39,79 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Creational\Prototype.h">
+      <Filter>Header Files\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Creational\Abstract_Factory.h">
+      <Filter>Header Files\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Creational\Builder.h">
+      <Filter>Header Files\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Creational\Factory_Method.h">
+      <Filter>Header Files\Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Mediator.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Chain_Of_Responsibility.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Command.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Interpreter.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Iterator.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Adapter.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Bridge.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Composite.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Decorator.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Facade.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Flyweight.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Structural\Proxy.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Memento.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Observer.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\State.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Strategy.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Template_Method.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Behavioral\Visitor.h">
+      <Filter>Header Files\Behavioral</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Design_Patterns.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Creational\Abstract_Factory.cpp">
+      <Filter>Source Files\Creational</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

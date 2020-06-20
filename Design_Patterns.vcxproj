@@ -84,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -147,17 +147,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\Behavioral\Chain_Of_Responsibility.h" />
+    <ClInclude Include="include\Behavioral\Command.h" />
+    <ClInclude Include="include\Behavioral\Interpreter.h" />
+    <ClInclude Include="include\Behavioral\Iterator.h" />
+    <ClInclude Include="include\Behavioral\Mediator.h" />
+    <ClInclude Include="include\Behavioral\Memento.h" />
+    <ClInclude Include="include\Behavioral\Observer.h" />
+    <ClInclude Include="include\Behavioral\State.h" />
+    <ClInclude Include="include\Behavioral\Strategy.h" />
+    <ClInclude Include="include\Behavioral\Template_Method.h" />
+    <ClInclude Include="include\Behavioral\Visitor.h" />
+    <ClInclude Include="Include\Creational\Abstract_Factory.h" />
+    <ClInclude Include="Include\Creational\Builder.h" />
+    <ClInclude Include="Include\Creational\Factory_Method.h" />
+    <ClInclude Include="Include\Creational\Prototype.h" />
+    <ClInclude Include="include\Structural\Adapter.h" />
+    <ClInclude Include="include\Structural\Bridge.h" />
+    <ClInclude Include="include\Structural\Composite.h" />
+    <ClInclude Include="include\Structural\Decorator.h" />
+    <ClInclude Include="include\Structural\Facade.h" />
+    <ClInclude Include="include\Structural\Flyweight.h" />
+    <ClInclude Include="include\Structural\Proxy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Design_Patterns.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="source\Creational\Abstract_Factory.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
