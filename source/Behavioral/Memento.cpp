@@ -1,5 +1,6 @@
-// Memento allows for capture and externalization of an objects internal state
-// so that object may be restored to this state later.
+// Memento allows for capture and externalization of an object's internal state
+// so that object may be restored to this state later without revealing the
+// details of its implementation.
 
 #include "../../include/Behavioral/Memento.h"
 
