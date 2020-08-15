@@ -23,9 +23,10 @@ ConcretePrototype1::ConcretePrototype1( std::string prototype_name_, double conc
 {
 }
 
-Prototype* ConcretePrototype1::Clone() const
+std::shared_ptr<Prototype> ConcretePrototype1::Clone() const
 {
-  return new ConcretePrototype1(*this );
+  //return new ConcretePrototype1(*this );
+  return std::make_shared<ConcretePrototype1>(*this);
 }
 
 ConcretePrototype2::ConcretePrototype2( std::string prototype_name_, double concrete_prototype_field_ )
@@ -33,24 +34,25 @@ ConcretePrototype2::ConcretePrototype2( std::string prototype_name_, double conc
 {
 }
 
-Prototype* ConcretePrototype2::Clone() const
+std::shared_ptr<Prototype> ConcretePrototype2::Clone() const
 {
-  return new ConcretePrototype2( *this );
+  //return new ConcretePrototype2( *this );
+  return std::make_shared<ConcretePrototype2>(*this);
 }
 
 PrototypeFactory::PrototypeFactory()
 {
-  prototypes[ Designator::DESIGNATOR_1 ] = new ConcretePrototype1( "DESIGNATOR_1 ", 50.0 );
-  prototypes[ Designator::DESIGNATOR_2 ] = new ConcretePrototype2( "DESIGNATOR_2 ", 60.0 );
+  prototypes[ Designator::DESIGNATOR_1 ] = std::make_shared<ConcretePrototype1>( "DESIGNATOR_1 ", 50.0 );
+  prototypes[ Designator::DESIGNATOR_2 ] = std::make_shared<ConcretePrototype2>( "DESIGNATOR_2 ", 60.0 );
 }
 
 PrototypeFactory::~PrototypeFactory()
 {
-  delete prototypes[ Designator::DESIGNATOR_1 ];
-  delete prototypes[ Designator::DESIGNATOR_2 ];
+  //delete prototypes[ Designator::DESIGNATOR_1 ];
+  //delete prototypes[ Designator::DESIGNATOR_2 ];
 }
 
-Prototype* PrototypeFactory::CreatePrototype( Designator designator )
+std::shared_ptr<Prototype> PrototypeFactory::CreatePrototype( Designator designator )
 {
   return prototypes[ designator ]->Clone();
 }
