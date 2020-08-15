@@ -1,41 +1,93 @@
-#pragma once
+// Allows for production families of related objects without specifying their concrete classes.
 
 #include "../../include/Creational/Abstract_Factory.h"
 
-void Room::Enter()
+std::string ConcreteProductA1::ProductFunctionA() const
 {
-  // TODO: 06/20/2020
+  return "The result of product A1.";
 }
 
-void Wall::Enter()
+std::string ConcreteProductA2::ProductFunctionA() const
 {
-  // TODO: 06/20/2020
+  return "The result of product A2.";
 }
 
-void Door::Enter()
+std::string ConcreteProductC1::ProductFunctionC() const
 {
-  // TODO: 06/20/2020
+  return "The result of product C1.";
 }
 
-Room*  Door::OtherSideFrom( Room* )
+std::string ConcreteProductC1::AnotherProductFunctionC( AbstractProductA const& collaborator ) const
 {
-  // TODO: 06/20/2020
-  return nullptr;
+  const std::string result = collaborator.ProductFunctionA();
+  return "The result of C1 collaborating with ( " + result + " )";
 }
 
-void Door::SetSide( Direction direction, MapSite* map_site )
+std::string ConcreteProductC2::ProductFunctionC() const
 {
-  // TODO: 06/20/2020
+  return "The result of product C2.";
 }
 
-void Maze::AddRoom( Room* )
+std::string ConcreteProductC2::AnotherProductFunctionC( AbstractProductA const& collaborator ) const
 {
-  // TODO: 06/20/2020
+  const std::string result = collaborator.ProductFunctionA();
+  return "The result of C2 collaborating with ( " + result + " )";
 }
 
-Room* Maze::RoomNo( int ) const
+std::shared_ptr<AbstractProductA> ConcreteFactory1::CreateProductA() const
 {
-  // TODO: 06/20/2020
-  return nullptr;
+  return std::make_shared<ConcreteProductA1>();
 }
+
+std::shared_ptr<AbstractProductC> ConcreteFactory1::CreateProductC() const
+{
+  return std::make_shared<ConcreteProductC1>();
+}
+
+std::shared_ptr<AbstractProductA> ConcreteFactory2::CreateProductA() const
+{
+  return std::make_shared<ConcreteProductA2>();
+}
+
+std::shared_ptr<AbstractProductC> ConcreteFactory2::CreateProductC() const
+{
+  return std::make_shared<ConcreteProductC2>();
+}
+
+//void Room::Enter()
+//{
+//  // TODO: 06/20/2020
+//}
+//
+//void Wall::Enter()
+//{
+//  // TODO: 06/20/2020
+//}
+//
+//void Door::Enter()
+//{
+//  // TODO: 06/20/2020
+//}
+//
+//Room*  Door::OtherSideFrom( Room* )
+//{
+//  // TODO: 06/20/2020
+//  return nullptr;
+//}
+//
+//void Door::SetSide( Direction direction, MapSite* map_site )
+//{
+//  // TODO: 06/20/2020
+//}
+//
+//void Maze::AddRoom( Room* )
+//{
+//  // TODO: 06/20/2020
+//}
+//
+//Room* Maze::RoomNo( int ) const
+//{
+//  // TODO: 06/20/2020
+//  return nullptr;
+//}
 
