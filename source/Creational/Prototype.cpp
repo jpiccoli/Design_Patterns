@@ -1,8 +1,8 @@
+// Provides for copying of existing objects without making code dependent on their classes.
+
 #include "../../include/Creational/Prototype.h"
 
 #include <iostream>
-
-// Provides for copying of existing objects without making your code dependent on their classes.
 
 Prototype::Prototype()
 {
