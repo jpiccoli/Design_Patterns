@@ -105,6 +105,9 @@
     <ClInclude Include="include\Behavioral\Visitor.h">
       <Filter>Header Files\Behavioral</Filter>
     </ClInclude>
+    <ClInclude Include="include\Structural\Singleton.h">
+      <Filter>Header Files\Structural</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Design_Patterns.cpp">
@@ -175,6 +178,9 @@
     </ClCompile>
     <ClCompile Include="source\Behavioral\Visitor.cpp">
       <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Structural\Singleton.cpp">
+      <Filter>Source Files\Structural</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

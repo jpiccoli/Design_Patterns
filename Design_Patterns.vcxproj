@@ -169,6 +169,7 @@
     <ClInclude Include="include\Structural\Facade.h" />
     <ClInclude Include="include\Structural\Flyweight.h" />
     <ClInclude Include="include\Structural\Proxy.h" />
+    <ClInclude Include="include\Structural\Singleton.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -196,6 +197,7 @@
     <ClCompile Include="source\Structural\Facade.cpp" />
     <ClCompile Include="source\Structural\Flyweight.cpp" />
     <ClCompile Include="source\Structural\Proxy.cpp" />
+    <ClCompile Include="source\Structural\Singleton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
