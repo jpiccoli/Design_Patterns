@@ -1,3 +1,5 @@
+// A structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
 #include "../../include/Structural/Facade.h"
 
 Facade::Facade(Subsystem1 *subsystem1, Subsystem2 *subsystem2)
