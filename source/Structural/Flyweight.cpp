@@ -40,7 +40,7 @@ void FlyweightFactory::ListFlyweights() const
 {
   size_t count = this->flyweights_.size();
 
-  std::cout << "\nFlyweightFactory: I have " << count << " flyweights:\n";
+  std::cout << "FlyweightFactory: I have " << count << " flyweights:\n";
   for( auto pair : this->flyweights_ )
   {
     std::cout << pair.first << '\n';
