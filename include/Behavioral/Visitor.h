@@ -22,13 +22,13 @@ struct Visitor_Component
 
 struct ConcreteComponentA : public Visitor_Component
 {
-  void Accept(const std::shared_ptr<Visitor> visitor) const override;
+  void Accept(std::shared_ptr<Visitor> const visitor) const override;
   std::string ExclusiveComponentA() const;
 };
 
 struct ConcreteComponentB : public Visitor_Component
 {
-  void Accept(const std::shared_ptr<Visitor> visitor) const override;
+  void Accept(std::shared_ptr<Visitor> const visitor) const override;
   std::string ExclusiveComponentB() const;
 };
 
